@@ -14,10 +14,7 @@ describe('server router', function() {
     .get('/')
     .end(function(err, res) {
       console.log(res.text);
-      res.should.have(200);
-      res.title.should.be('Express');
-      // res.header.should.be('text/html');
-
+      res.should.have.status(200);
       done();
     });
   });
