@@ -2,7 +2,7 @@ process.env.NODE_ENV = 'test';
 
 var chai = require('chai');
 var mocha = require('mocha');
-var chaiHttp = require('chaiHttp');
+var chaiHttp = require('chai-http');
 var server = require('../src/server/app.js');
 
 var should = chai.should();
