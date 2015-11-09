@@ -1,12 +1,16 @@
 language: node_js
-
 node_js:
- - '4.1'
- - '4.0'
- - '0.12'
- - '0.11'
-
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
 before_script:
- - npm install -g mocha
-
+- npm install -g mocha
 script: mocha
+deploy:
+  provider: heroku
+  api_key:
+    secure: qMPZfjD5igGvuwwFWy9zf3Uy8vxHK5kztkL51bcfzpfg1FhZ5CNoI7z28j9MMvDdJP21BDKIVEB7rlKhLx0eizdCvMh2FTi90FMwqJB8PcVr15zBWZsJjEnf0SlOor0GwBk724mlXxHwI2KxIS5Q1noWg0/3vo2D10CbHuufFKoPH5L3CwaNCAjaAVb/jHFrcsLYWFlSjCAouPtEloToZ/ww300VwZTRvsSzkC3EhpZGWpwYEnOhDQmsgDG/QJAvpxl6vD4VY8oejChQrL4Iq30dukbKaZEiJ45x8118HrHewiZDddNQEu2meMPx59Dh9ur/JN/Zuam/DnDzmelNCYKANmjHVBfSIdHAC0Qso8hzrEoTvwInxj35bUWshm9/fFku4JnpAgvAMoSaG4RY7+QALYkCFL1gWFRhqZcgPChXbhwbOYVApregc36fTLVrLWblAReXXi1GswTPT+cHbHnRZtEQ6HFWwvFn3AQXSSVuBjoHOReqr5g8HQiuc6pdVPiRa3TrkX2GhqED7SU4jWBG3nb5Lx+/rm0j44yES1bWTozPf1rxQAMz5180PgYTFkKfGaV5lwj71aHT7fkI2PG/XAmP6MK7mgpdOMX9irdZ6NxBA5qQx8elDGhgs1v++3a8uMX4zHiIeAQjynPv+fTEr/jBCvxJbv6kWiFhs7g=
+  app: guest-speaker
+  on:
+    repo: amberwoodrow/guest_speaker
