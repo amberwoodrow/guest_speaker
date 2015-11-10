@@ -1,1 +1,1 @@
-(https://travis-ci.org/amberwoodrow/guest_speaker.svg?branch=master)
+![Alt text](https://travis-ci.org/amberwoodrow/guest_speaker.svg?branch=master)
